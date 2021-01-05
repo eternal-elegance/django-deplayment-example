@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative Url Templates</title>
+</head>
+<body>
+  <h1>This is the Relative Url Templates</h1>
+  <a href="{% url 'basic_app:other' %}">Relative url to other page</a>
+  <a href=" {% url 'admin:index' %} ">Admin page</a> <!-- from another app -->
+  <a href="{% url 'index' %}">Index page</a> <!-- This is also not inside the app inside project urls -->
+</body>
+</html>
